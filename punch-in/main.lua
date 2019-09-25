@@ -52,11 +52,8 @@ for var = 1, 3 do
     setScreenScale(false)
     mSleep(5000)
     -- 根据像素模糊查找考勤按钮
-    x, y = findMultiColorInRegionFuzzy(0x4da9eb, "0|6|0xffffff,6|6|0x4da9eb,6|18|0x4da9eb,6|21|0xffffff,17|21|0x4da9eb,15|10|0xe0f0fb,15|-1|0xcde6f9,15|-12|0xdeeffb,15|-18|0x4da9eb", 90, 0, 0, 719, 1279);
-    if x ~= -1 and y ~= -1 then
-        click(x, y);
-    else
-        click(93, 976);
+    x, y = (170.8, 1122.4)
+    click(x, y);
     end
     mSleep(20000);
 
